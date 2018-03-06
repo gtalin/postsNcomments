@@ -1,0 +1,94 @@
+@import 'main';
+ul {
+  margin: 0 auto;
+}
+.postList {
+  display: flex;
+  width: 100vw;
+  //justify-content: center;
+  margin: auto;
+  aside {
+    border-radius: 10px;
+    //padding: 2px;
+    margin: 10px;
+    //padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    max-height: 90px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+      .date {
+        font-size: 30px;
+      }
+    }
+
+  article,li {
+    border-radius: 10px;
+    //border: 1px solid black;
+    //padding: 10px;
+    margin: 10px;
+  }
+  article {
+    width: 90vw;
+    //padding: 2px;
+  }
+  h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-right: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    //flex-direction: columnn
+
+    button {
+      border: 1px solid black;
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  p{
+    padding: 10px;
+  }
+  .buttons {
+    padding-right: 5px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    //float: right;
+    //clear: both;
+    margin: 10px;
+    text-align: right;
+  }
+  li {
+    padding: 10px;
+  }
+
+}
+
+.postList:nth-child(even) {
+  article,li {
+    background-color: $pink;
+  }
+  aside {
+    background-color: $dark-red;
+  }
+
+}
+.postList:nth-child(odd) {
+  article,li {
+    background-color: $green;
+  }
+  aside {
+    background-color: $dark-green;
+  }
+}

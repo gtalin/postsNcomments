@@ -1,0 +1,44 @@
+$pink: #FFB3A5;
+$green: #D5FFA5;
+$dark-green: #4C8E00;
+$dark-red: #8E1500;
+$icon-color: #222222;
+$modal-inner-grey: #C0C0C0;
+$modal-outer-grey: #494949;
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+header {
+  width: 90vw;
+
+  margin-left: 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  button {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
